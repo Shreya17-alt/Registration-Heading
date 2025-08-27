@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title {
+   text-align: center;
+   color:#70ebef;
+
+}
+body{
+    width: 100vw;
+    height:100vh;
+    background: #0b0c2a;
+    display:grid;
+    place-content: center;
+}
+.container{
+    width: 850px;
+    height: 600px;
+    background:#1d1f49;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap:0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px grey ;
+}
+.container .background{
+    width: 70%;
+    height: 100%;
+    background: url('Space.png.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container .form-container{
+    width: 40%;
+    height: 100%;
+    padding:15px;
+}
+.container .form-container .form-title{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap:0.5em;
+}
+.container .form-container .form-title h2{
+    color:transparent;
+    background:linear-gradient(90deg,#7f5af0,#00d4ff,#f76c6c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:glowMove 6s linear infinite;
+    transition: transform 0.4s ease,textshadow 0.4s ease;
+    margin-bottom: 20px;
+}
+.container .form-container .form-title p{
+    font-size: 0.8em;
+    color:#e0e0e0;
+}
+.container .form-container form{
+    width:100%;
+    padding-top:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:start;
+    gap:0.5em;
+}
+.form-container form .input-field{
+    width:100%;
+    color: #92cad4d6;
+    font-size: 1.02em;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in 0.2s;
+}
+.form-container form .input-field input{
+    font-size: 0.9em;
+    font-weight: 510;
+    color:#010001;
+    background:whitesmoke;
+    border-radius:5px;
+    padding:20px;
+    display:grid;
+    place-content: center;
+    border: 1px solid gray;
+}
+.form-container form .input-field input,
+.form-container form .input-field select
+{
+    width:100%;
+    margin-top: 5px;
+    padding:6px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    outline:none;
+    top:0;
+    right:0;
+    border-top:3px solid black;
+    border-right:3px solid black;
+    border-image: linear-gradient(120deg,orange,blue) 1;
+    border-top-right-radius: 5px;
+    transition: all ease-in 0.2s;
+}
+.form-container form .input-field input,
+.form-container form .input-field select
+{
+    width:100%;
+    margin-top: 5px;
+    padding:6px;
+    border-radius: 4px;
+    outline:none;
+    top:0;
+    right:0;
+    border-left:3px solid black;
+    border-bottom:3px solid black;
+    border-image: linear-gradient(120deg,orange,blue) 1;
+    border-bottom-left-radius: 5px;
+    transition: all ease-in 0.2s;
+}
+.form-container form button{
+    margin-top: 30px;
+    width:100%;
+    padding:10px;
+    background: #511eea;
+    color: #b3ebf8a9;
+    outline: none;
+    border: blueviolet;
+    font-size:1em;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor:pointer;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.button-container{
+    margin:20px auto;
+    background:whitesmoke;
+    border-radius:5px;
+    padding:20px;
+    display:grid;
+    place-content: center;
+    border: 1px solid gray;
+}
+.button-container button{
+    width:200px;
+    height:60px;
+    background: white;
+    font-size: 1.02em;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in 0.2s;
+}
+.button-container button::after{
+    content:'';
+    position: absolute;
+    top:0;
+    right:0;
+    width:25px;
+    height:25px;
+    border-top:3px solid black;
+    border-right:3px solid black;
+    border-image: linear-gradient(120deg,orange,blue) 1;
+    border-top-right-radius: 5px;
+    transition: all ease-in 0.2s;
+}
+.button-container button::before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:25px;
+    height:25px;
+    border-left:3px solid black;
+    border-bottom:3px solid black;
+    border-image: linear-gradient(120deg,orange,blue) 1;
+    border-bottom-left-radius: 5px;
+    transition: all ease-in 0.2s;
+}
+.button-container button:hover::after,
+.button-container button:hover::before{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+.button-container button:hover{
+    background: linear-gradient(220deg,blue,orange);
+    color:transparent;
+    background-clip: text;
+}
